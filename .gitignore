@@ -14,26 +14,3 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-/*.tmp*
-*.tmproj
-
-# Ignore application configuration
-/config/application.yml
-
-/vendor/bundle
-
-.git/gc.log/vendor/bundle
-.tmp-*
-/.git
-/node_modules
-*.log
-log/
-.DS_Store
-Thumbs.db
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-.env
