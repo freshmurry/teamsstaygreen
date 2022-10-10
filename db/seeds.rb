@@ -7,17 +7,17 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 growth_hacking = Product.create(
-  title: "How to Manage Working with Builders When Building from the Dirt Up",
-  subtitle: "Digital eBook",
+  title: "Make Microsoft Teams Stay Green:",
+  subtitle: "How to Appear Online all The Time",
   author: "Lawrence Murry",
   author_image_name: "freshmurry.jpg",
-  length: "(1) eBook",
-  price: "44.99",
-  sku: "EBOOK1",
+  length: "(1) eGuide",
+  price: "15.99",
+  sku: "eGuide",
   download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf",
-  details: "You\'ll receive one downloadable eBook",
-  description: %{<p>Working with builders can be daunting but it doesn't have to be. Let us take you through our build process and learn the ins and outs of how to best manage working with builders.</p>
-            <p>In this eBook, we will help you to not get "taken on a trip" that you'll later regret.</p>
+  details: "You\'ll receive one downloadable eGuide",
+  description: %{<p>If you are working at a company that uses Microsoft Teams you need this eGuide. Let us take you through our build process and learn the ins and outs of how to best manage working with builders.</p>
+            <p>In this eGuide, I will help you to not get "taken on a trip" that you'll later regret.</p>
             <p><strong>What You'll Learn</strong></p>
             <ul class="no-indent">
                 <li>How to manage your builder</li>
@@ -25,26 +25,20 @@ growth_hacking = Product.create(
                 <li>How to make the most of your build allowances</li>
                 <li>Best resources to have to help make the new build process smoother</li>
             </ul>},
-  author_description: %{<p>Hey Y'all, Wer\'re the Murry\'s! With the grace of God we were able to build a home of our dreams. While the process was intimidating ans scary at times, we pushed forward becuase we put so much
-    preperation into this very moment in our lives. We started documenting our build process on <a href="https://www.instagram.com/housewiththecooldoor" target="_blank">Instagram</a> and noticed ths entire community 
-    of people and couples who where kindred spirits in sharing their new build process, trials, and errors along the way.</p>
-    <p>Therefore we've decided to undertake creating an all-encompasing ebook documenting our entire build process, the designing of our home, how we got to this point, the struggles, finances, and everything between the lines.</p>
-    <p>We closed on our first house in our mid-20's. While this might not be a surprise to the majority, homeownership in your mid-20's is quite an exceptional feat especially being a young black couple. My goal is to help 
-    other like-minded young adults, middle-age adults, and older adults realize their potential at building a new home from the dirt.</p>
-    <p>Our goal is to take you through the pain and heart ache of looking for a home and the building process all the way through popping the Champagne bottle after closing.</p>
+  author_description: %{<p>Hey Y'all, I\'m Lawrence Murry!</p>
+    <p>I'm a Seniore Technical Proposal Manager. Aside from my day job, I enjoy working on techy things, spending time with my two kids, and watching my beloved Chicago Bears, Bulls, and Cubs kick ass.</p>
+    <p></p>
+    <p>My goal is to take away the pain of searching for ways to keep your Microsoft Teams stay green while you run out for a quick coffee.</p>
     <br>
     <p>What's Included</p>
     <ul>
-      <li>Screenshots of our actual high-yield agressive savings account</li>
-      <li>Illustrations of the build through various stages</li>
-      <li>Our spec sheet from our builder</li>
-      <ul>BONUS #1</ul>
-      <p>We seriously decided not to include this but it was a last minute decision. If you purchase our eBook today, we've included a complete list of our extras, pictures, and details of out-of-pocket expenses 
-      for extras, and the places where we've made our purchases.</p>
-      <ul>Bonus #2</ul>
-      <li>List of contractors</li>
+      <li>Make Microsoft Teams Stay Green Guide</li>
+      <li>Screenshots</li>
+      <li>Ilustrations</li>
+      <ul>BONUS</ul>
+      <p>Link to desktop app.</p>
     </ul>
-    <p>Follow our build and design on Instagram <a href="https://instagram.com/housewiththecooldoor" target="_blank">@housewiththecooldoor</a></p>})
+    <p>Be sure to follow me on <a href="https://instagram.com/freshmurry" target="_blank">@freshmurry</a> to tank me or should you have any questions.</p>})
 
 # growth_hacking = Product.create(
 # 	title: "Growth Hacking Your Instagram Following", 
