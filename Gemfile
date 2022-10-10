@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
 #Require a specific ruby version 
-ruby '2.3.4'
+ruby '2.7.6'
 
-gem 'rails', '4.2.6'
+# gem 'rails', '4.2.6'
+gem 'rails', '5.0.2'
 gem 'yarn'
 gem 'bootstrap-sass'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
@@ -16,6 +17,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'devise'
+gem 'bigdecimal'
 
 group :development do
 	gem "letter_opener"
