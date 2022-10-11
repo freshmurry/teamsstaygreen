@@ -6,39 +6,28 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-growth_hacking = Product.create(
-  title: "Make Microsoft Teams Stay Green:",
-  subtitle: "How to Appear Online all The Time",
+eGuide = Product.create(
+  title: "How to Make Microsoft Teams Stay Green",
+  subtitle: "and Appear Online all The Time",
   author: "Lawrence Murry",
   author_image_name: "freshmurry.jpg",
   length: "(1) eGuide",
-  price: "15.99",
+  price: "14.99",
   sku: "eGuide",
   download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf",
   details: "You\'ll receive one downloadable eGuide",
-  description: %{<p>If you are working at a company that uses Microsoft Teams you need this eGuide. Let us take you through our build process and learn the ins and outs of how to best manage working with builders.</p>
-            <p>In this eGuide, I will help you to not get "taken on a trip" that you'll later regret.</p>
-            <p><strong>What You'll Learn</strong></p>
-            <ul class="no-indent">
-                <li>How to manage your builder</li>
-                <li>How to source your on extras</li>
-                <li>How to make the most of your build allowances</li>
-                <li>Best resources to have to help make the new build process smoother</li>
-            </ul>},
+  description: %{<p>If you are working at a company that uses Microsoft Teams you need this eGuide. Let us ta
+                <p>My goal is to take away the pain of searching for ways to keep your Microsoft Teams stay green while you run out for a quick coffee.</p>
+                <p><strong>What You'll Learn:</strong></p>
+                <ul class="no-indent">
+                  <li>Make Microsoft Teams Stay Green Guide</li>
+                  <li>Screenshots</li>
+                  <li>Ilustrations</li>
+                  <li>Link to desktop app</li>
+                </ul>
+                <p>Be sure to follow me on <a href="https://instagram.com/freshmurry" target="_blank">@freshmurry</a> and send me a message should you have any questions.</p>},
   author_description: %{<p>Hey Y'all, I\'m Lawrence Murry!</p>
-    <p>I'm a Seniore Technical Proposal Manager. Aside from my day job, I enjoy working on techy things, spending time with my two kids, and watching my beloved Chicago Bears, Bulls, and Cubs kick ass.</p>
-    <p></p>
-    <p>My goal is to take away the pain of searching for ways to keep your Microsoft Teams stay green while you run out for a quick coffee.</p>
-    <br>
-    <p>What's Included</p>
-    <ul>
-      <li>Make Microsoft Teams Stay Green Guide</li>
-      <li>Screenshots</li>
-      <li>Ilustrations</li>
-      <ul>BONUS</ul>
-      <p>Link to desktop app.</p>
-    </ul>
-    <p>Be sure to follow me on <a href="https://instagram.com/freshmurry" target="_blank">@freshmurry</a> to tank me or should you have any questions.</p>})
+    <p>I'm a Seniore Technical Proposal Manager. Aside from my day job, I enjoy working on techy things, spending time with my two kids, and watching my beloved Chicago Bears, Bulls, and Cubs kick ass.</p>})
 
 # growth_hacking = Product.create(
 # 	title: "Growth Hacking Your Instagram Following", 
