@@ -12,9 +12,9 @@ eGuide = Product.create(
   author: "Lawrence Murry",
   author_image_name: "freshmurry.jpg",
   length: "(1) eGuide",
-  price: "14.99",
+  price: "8.99",
   sku: "eGuide",
-  download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf",
+  download_url: "https://teamsstaygreen.s3.us-east-2.amazonaws.com/How+to+Make+Microsoft+Teams+Stay+Green.pdf",
   details: "You\'ll receive one downloadable eGuide",
   description: %{<p>If you are working at a company that uses Microsoft Teams you need this eGuide. Let us ta
                 <p>My goal is to take away the pain of searching for ways to keep your Microsoft Teams stay green while you run out for a quick coffee.</p>
