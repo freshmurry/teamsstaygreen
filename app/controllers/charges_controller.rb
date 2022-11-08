@@ -6,16 +6,16 @@ class ChargesController < ApplicationController
 
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],
-      :card  => params[:stripeToken]
-      # :plan  => "GROHACK2" ----- USE ONLY WHEN CREATING A SUBSCRIPTION-BASED APP -----
+      :card  => params[:stripeToken],
+      :plan  => "eGuide"
     )
 
-    charge = Stripe::Charge.create(
-      :customer    => customer.id,
-      :amount      => product.price_in_cents,
-      :description => product.full_description,
-      :currency    => 'usd'
-    )
+    # charge = Stripe::Charge.create(
+    #   :customer    => customer.id,
+    #   :amount      => product.price_in_cents,
+    #   :description => product.full_description,
+    #   :currency    => 'usd'
+    # )
 
     # purchase = Purchase.create(email: params[:stripeEmail], 
     #   card: params[:stripeToken], amount: product.price_in_cents,
