@@ -10,17 +10,12 @@ class ChargesController < ApplicationController
       :plan  => "eGuide"
     )
 
-    # charge = Stripe::Charge.create(
-    #   :customer    => customer.id,
-    #   :amount      => product.price_in_cents,
-    #   :description => product.full_description,
-    #   :currency    => 'usd'
-    # )
-
-    # purchase = Purchase.create(email: params[:stripeEmail], 
-    #   card: params[:stripeToken], amount: product.price_in_cents,
-    #   description: product.full_description, currency: 'usd',
-      # customer_id: customer.id, product_id: product.id, uuid: SecureRandom.uuid)
+    charge = Stripe::Charge.create(
+      :customer    => customer.id,
+      :amount      => product.price_in_cents,
+      :description => product.full_description,
+      :currency    => 'usd'
+    )
       
     purchase = Purchase.create(email: params[:stripeEmail], 
       card: params[:stripeToken], amount: product.price_in_cents,
