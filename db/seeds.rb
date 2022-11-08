@@ -16,7 +16,7 @@ eGuide = Product.create(
   sku: "eGuide",
   download_url: "https://teamsstaygreen.s3.us-east-2.amazonaws.com/How+to+Make+Microsoft+Teams+Stay+Green.pdf",
   details: "You\'ll receive one downloadable eGuide",
-  description: %{<p>If you are working at a company that uses Microsoft Teams you need this eGuide. Let us ta
+  description: %{<p>If you are working at a company that uses Microsoft Teams and want to learn how to make Teams Stay Green, this eGuide is just for you!
                 <p>My goal is to take away the pain of searching for ways to keep your Microsoft Teams stay green while you run out for a quick coffee.</p>
                 <p><strong>What You'll Learn:</strong></p>
                 <ul class="no-indent">
