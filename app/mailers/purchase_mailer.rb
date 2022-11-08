@@ -1,6 +1,6 @@
 class PurchaseMailer < ActionMailer::Base
   layout 'purchase_mailer'
-  default from: "Grow Hack Your Instagram Following <payments@freshmurry.com>"
+  default from: "Teams Stay Green <payments@teamsstaygreen.com>"
 
   def purchase_receipt purchase 
     @purchase = purchase
