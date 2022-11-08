@@ -1,8 +1,8 @@
 class ChargesController < ApplicationController
 
   def create
-    # product = Product.find_by_sku("GROHACK1") ----- USE ONLY WHEN CREATING A SUBSCRIPTION-BASED APP -----
-    product = Product.find(params[:product_id])
+    product = Product.find_by_sku("eGuide")
+    # product = Product.find(params[:product_id])
 
     customer = Stripe::Customer.create(
       :email => params[:stripeEmail],

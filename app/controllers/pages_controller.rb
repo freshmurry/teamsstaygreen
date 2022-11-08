@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   def home
-    # @product = Product.find_by_sku("eGuide")
-    @product = Product.find("product_id")
+    @product = Product.find_by_sku("eGuide")
   end
 end
