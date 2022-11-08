@@ -8,6 +8,7 @@ gem 'rails', '5.0.2'
 gem 'yarn'
 gem 'bootstrap-sass'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'dotenv-rails', :groups => [:development, :test]
 gem 'figaro'
 gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'sass-rails', '~> 5.0'
@@ -28,7 +29,6 @@ group :development, :test do
 end
 
 group :production do
-	# gem 'pg', '~> 0.20'
 	gem 'pg', '~> 0.20.0'
 	gem 'rails_12factor'
 end

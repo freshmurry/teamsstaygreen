@@ -89,6 +89,10 @@ GEM
       railties (>= 4.1.0)
       responders
       warden (~> 1.2.3)
+    dotenv (2.8.1)
+    dotenv-rails (2.8.1)
+      dotenv (= 2.8.1)
+      railties (>= 3.2)
     erubis (2.7.0)
     execjs (2.8.1)
     ffi (1.15.5)
@@ -250,6 +254,7 @@ DEPENDENCIES
   bootstrap-sass
   coffee-rails (~> 4.1.0)
   devise
+  dotenv-rails
   figaro
   jbuilder (~> 2.0)
   jquery-rails
