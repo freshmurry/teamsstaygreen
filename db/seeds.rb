@@ -8,13 +8,13 @@
 
 eGuide = Product.create(
   title: "How to Make Microsoft Teams Stay Green",
-  subtitle: "and Appear Online all The Time",
+  subtitle: "Appear Online All Day",
   author: "Lawrence Murry",
   author_image_name: "freshmurry.jpg",
   length: "(1) eGuide",
   price: "8.99",
   sku: "eGuide",
-  download_url: "https://teamsstaygreen.s3.us-east-2.amazonaws.com/How+to+Make+Microsoft+Teams+Stay+Green.pdf",
+  download_url: "https://teams-stay-green.s3.us-east-2.amazonaws.com/How-to-Make-Microsoft-Teams-Stay-Green.pdf,
   details: "You\'ll receive one downloadable eGuide",
   description: %{<p>If you are working at a company that uses Microsoft Teams and want to learn how to make Teams Stay Green, this eGuide is just for you!
                 <p>My goal is to take away the pain of searching for ways to keep your Microsoft Teams stay green while you run out for a quick coffee.</p>
@@ -25,9 +25,9 @@ eGuide = Product.create(
                   <li>Ilustrations</li>
                   <li>Link to desktop app</li>
                 </ul>
-                <p>Be sure to follow me on <a href="https://instagram.com/freshmurry" target="_blank">@freshmurry</a> and send me a message should you have any questions.</p>},
+                <p>Be sure to follow me on <a href="https://www.instagram.com/l.a.murry/" target="_blank">@l.a.murry</a> and send me a message should you have any questions.</p>},
   author_description: %{<p>Hey Y'all, I\'m Lawrence Murry!</p>
-    <p>I'm a Seniore Technical Proposal Manager. Aside from my day job, I enjoy working on techy things, spending time with my two kids, and watching my beloved Chicago Bears, Bulls, and Cubs kick ass.</p>})
+    <p>I'm a Senior Technical Proposal Manager. Aside from my day job, I enjoy working on techy things, spending time with my two kids, and watching my beloved Chicago Bears, Bulls, and Cubs kick ass.</p>})
 
 # growth_hacking = Product.create(
 # 	title: "Growth Hacking Your Instagram Following", 
