@@ -37,4 +37,15 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # config.force_ssl = true
+
+  # config.ssl_options = {
+  #   hsts: { expires: 1.year, preload: true, subdomains: true },
+  #   secure_cookies: true
+  # }
+
+  # config.ssl_options = {
+  #   redirect: { exclude: -> request { request.path =~ /healthcheck/ } }
+  # }
 end

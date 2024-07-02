@@ -13,10 +13,10 @@
         <%= hidden_field_tag 'amount', @product.price_in_cents %>
         <button id='btn-buy' type='button' class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</button>
 
-        <script>
+        <script type="text/javascript">
           var handler = StripeCheckout.configure({
             key: '<%= Rails.configuration.stripe[:publishable_key] %>',
-            token: function(token, arg) {
+            token: function(token, args) {
               document.getElementById("stripeToken").value = token.id;
               document.getElementById("stripeEmail").value = token.email;
               document.getElementById("chargeForm").submit();
@@ -30,7 +30,11 @@
               amount: document.getElementById("amount").value
             });
             e.preventDefault();
-          })
+          });
+
+          window.addEventListener('popstate', function() {
+            handler.close();
+          });
         </script>
       <% end %>
 
