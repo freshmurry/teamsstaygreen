@@ -1,0 +1,17 @@
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/strscan-3.1.0/ext/strscan
+/home/lmurry/.rbenv/versions/2.7.6/bin/ruby -I /home/lmurry/.rbenv/versions/2.7.6/lib/ruby/site_ruby/2.7.0 -r ./siteconf20240702-65799-1ogxvmv.rb extconf.rb
+checking for onig_region_memsize() in ruby.h... yes
+checking for rb_reg_onig_match() in ruby.h... no
+creating Makefile
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= clean
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\=
+compiling strscan.c
+linking shared-object strscan.so
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/strscan-3.1.0/ext/strscan
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 strscan.so ./.gem.20240702-65799-1nacdfd

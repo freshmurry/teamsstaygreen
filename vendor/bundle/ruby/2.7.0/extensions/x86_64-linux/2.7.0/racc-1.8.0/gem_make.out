@@ -1,0 +1,15 @@
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/racc-1.8.0/ext/racc/cparse
+/home/lmurry/.rbenv/versions/2.7.6/bin/ruby -I /home/lmurry/.rbenv/versions/2.7.6/lib/ruby/site_ruby/2.7.0 -r ./siteconf20240702-65799-14dx2m.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/racc-1.8.0/ext/racc/cparse
+make DESTDIR\= clean
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/racc-1.8.0/ext/racc/cparse
+make DESTDIR\=
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/racc-1.8.0/ext/racc/cparse
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20240702-65799-1p4a8kj/racc

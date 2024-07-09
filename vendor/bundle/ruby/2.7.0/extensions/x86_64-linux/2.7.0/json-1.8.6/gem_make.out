@@ -1,0 +1,13 @@
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/json-1.8.6/ext/json
+/home/lmurry/.rbenv/versions/2.7.6/bin/ruby -I /home/lmurry/.rbenv/versions/2.7.6/lib/ruby/site_ruby/2.7.0 -r ./siteconf20240702-65799-1par657.rb extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/json-1.8.6/ext/json
+make DESTDIR\= clean
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/json-1.8.6/ext/json
+make DESTDIR\=
+make: Nothing to be done for 'all'.
+
+current directory: /mnt/c/Sites/teamsstaygreen/vendor/bundle/ruby/2.7.0/gems/json-1.8.6/ext/json
+make DESTDIR\= install
