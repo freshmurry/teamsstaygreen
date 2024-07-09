@@ -1,0 +1,2 @@
+[submodule "vendor/bundle/ruby/2.7.0/bundler/gems/stripe-ruby-fa2baeba7abd"]
+	url = git@github.com:username/repo.git
