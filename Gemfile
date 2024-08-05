@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Require a specific ruby version
 ruby '2.7.6'
 
-gem 'rails', '5.0.2'
+gem 'rails', '5.0.3'
 gem 'yarn'
 gem 'bootstrap-sass'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
@@ -20,6 +20,7 @@ gem 'bigdecimal'
 gem 'ffi', '< 1.17.0'
 gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
+gem 'paperclip'
 
 group :development do
   gem 'letter_opener'
@@ -41,8 +42,6 @@ group :production do
 end
 
 group :test do
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
   gem 'chromedriver-helper'
 end
 
