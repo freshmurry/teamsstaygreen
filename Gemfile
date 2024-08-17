@@ -3,38 +3,45 @@ source 'https://rubygems.org'
 # Require a specific ruby version
 ruby '2.7.4'
 
+# Rails version
 gem 'rails', '~> 5.2.8'
+
+# Gems for asset management
+gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass', '~> 3.4'
+gem 'jquery-rails'
 gem 'yarn'
-gem 'bootstrap-sass'
+
+# Gems for functionality
 gem 'stripe'
 gem 'figaro'
 gem 'activeadmin'
-gem 'sass-rails', '~> 5.0'
+gem 'devise'
+gem 'paperclip'
+
+# Gems for JavaScript and CoffeeScript
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'coffee-script', '~> 2.4'
-gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
-gem 'devise'
-gem 'bigdecimal'
-gem 'ffi', '< 1.17.0'
-gem 'puma', '~> 3.0'
-gem 'turbolinks', '~> 5'
-gem 'paperclip'
-gem 'json'
-gem 'psych', '~> 3.1'
-gem 'nokogiri'
 
+# Gems for JSON and other utilities
+gem 'json', '~> 2.5'
+gem 'bigdecimal', '~> 2.0'
+gem 'ffi', '~> 1.15'
+gem 'psych', '~> 3.1'
+gem 'nokogiri', '~> 1.13'
+
+# Web and development tools
 group :development do
   gem 'letter_opener'
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '~> 3.0.5'
+  gem 'web-console', '>= 3.5'
+  gem 'listen', '~> 3.3'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'spring-watcher-listen', '~> 2.0'
 end
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.3.6'
+  gem 'sqlite3', '~> 1.4'
   gem 'byebug', platform: :mri
   gem 'yard'
   gem 'dotenv-rails'
@@ -42,7 +49,7 @@ end
 
 group :production do
   gem 'pg', '~> 1.2'
-  gem 'rails_12factor'
+  gem 'rails_12factor', '~> 0.0.3'
 end
 
 group :test do
