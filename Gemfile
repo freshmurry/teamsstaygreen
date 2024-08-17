@@ -1,40 +1,62 @@
 source 'https://rubygems.org'
 
+# Require a specific ruby version
+ruby '2.7.4'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+# Rails version
+gem 'rails', '~> 5.0.3'
 
-# Use jquery as the JavaScript library
+# Gems for asset management
+gem 'sass-rails', '~> 5.0'
+gem 'bootstrap-sass', '~> 3.4'
 gem 'jquery-rails'
-# Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+gem 'yarn'
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# Gems for functionality
+gem 'stripe'
+gem 'figaro'
+gem 'activeadmin'
+gem 'devise'
+gem 'paperclip'
 
-# Use unicorn as the app server
-# gem 'unicorn'
+# Gems for JavaScript and CoffeeScript
+gem 'uglifier', '>= 1.3.0'
+gem 'coffee-rails', '~> 4.2'
+gem 'coffee-script', '~> 2.4'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+# Gems for JSON and other utilities
+gem 'json'
+gem 'bigdecimal', '~> 2.0'
+gem 'ffi', '~> 1.15'
+gem 'psych', '~> 3.1'
+gem 'nokogiri', '~> 1.13'
+gem 'activerecord', '~> 5.0.3'
 
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+# Web and development tools
+group :development do
+  gem 'letter_opener'
+  gem 'web-console', '>= 3.5'
+  gem 'listen', '~> 3.3'
+  gem 'spring'
+  gem 'spring-watcher-listen', '~> 2.0'
+end
 
+group :development, :test do
+  gem 'sqlite3', '~> 1.3.6'
+  gem 'byebug', platform: :mri
+  gem 'yard'
+  gem 'dotenv-rails'
+end
+
+group :production do
+  gem 'pg', '~> 1.2'
+end
+
+group :test do
+  gem 'webdrivers'
+end
+
+group :sdoc do
+  gem 'sdoc', '~> 1.0'
+end
