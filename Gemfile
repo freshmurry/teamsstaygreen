@@ -21,7 +21,7 @@ gem 'ffi', '< 1.17.0'
 gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
 gem 'paperclip'
-gem 'json', '~> 1.8'
+gem 'json', '~> 2.3'
 gem 'psych', '~> 3.1'
 
 
