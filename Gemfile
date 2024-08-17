@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.7.4'
 
 # Rails version
-gem 'rails', '~> 5.2.8'
+gem 'rails', '~> 5.0.3'
 
 # Gems for asset management
 gem 'sass-rails', '~> 5.0'
