@@ -22,8 +22,6 @@ gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
 gem 'paperclip'
 gem 'json', '~> 2.3'
-# gem 'psych'
-# Gemfile
 gem 'psych', '~> 3.1'
 
 
@@ -39,10 +37,10 @@ group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', platform: :mri
   gem 'yard'
+  gem 'dotenv-rails'
 end
 
 group :production do
-	# gem 'pg', '~> 0.20'
   gem 'pg', '~> 1.2'
   gem 'rails_12factor'
 end
