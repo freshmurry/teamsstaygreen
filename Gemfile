@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Require a specific ruby version
 ruby '2.7.4'
 
-gem 'rails', '5.0.3'
+gem 'rails', '~> 4.2'
 gem 'yarn'
 gem 'bootstrap-sass'
 gem 'stripe'
