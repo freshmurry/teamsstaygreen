@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 # Require a specific ruby version
-ruby '2.7.6'
+ruby '2.7.4'
 
 gem 'rails', '5.0.3'
 gem 'yarn'
 gem 'bootstrap-sass'
-gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'stripe'
 gem 'figaro'
 gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'sass-rails', '~> 5.0'
@@ -21,6 +21,11 @@ gem 'ffi', '< 1.17.0'
 gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
 gem 'paperclip'
+gem 'json', '~> 2.3'
+# gem 'psych'
+# Gemfile
+gem 'psych', '~> 3.1'
+
 
 group :development do
   gem 'letter_opener'
@@ -33,6 +38,7 @@ end
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', platform: :mri
+  gem 'yard'
 end
 
 group :production do
@@ -46,5 +52,5 @@ group :test do
 end
 
 group :sdoc do
-  gem 'sdoc', '~> 0.4.0'
+  gem 'sdoc', '~> 1.0'
 end
