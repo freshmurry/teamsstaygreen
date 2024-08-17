@@ -44,12 +44,11 @@ group :development, :test do
   gem 'sqlite3', '~> 1.4'
   gem 'byebug', platform: :mri
   gem 'yard'
-  gem 'dotenv-rails', '~> 2.7.4'
+  gem 'dotenv-rails'
 end
 
 group :production do
   gem 'pg', '~> 1.2'
-  # Removed rails_12factor as it's not needed for Rails 5.x
 end
 
 group :test do
