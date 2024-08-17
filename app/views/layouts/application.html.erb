@@ -1,65 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>How to Make Microsoft Teams Stay Green - eBook</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="How to Make Microsoft Teams Stay Green">
+    <meta name="keyword" content="Microsoft Teams Stay Green, Teams Stay Green, Teams Stay Green eBook, How to Make Microsoft Teams Stay Green eBook">
+    <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800' >
 
-  <!-- Title and Description -->
-  <title>How to Make Microsoft Teams Stay Green - eGuide eBook</title>
-  <meta name="description" content="Learn how to make Microsoft Teams stay green with our comprehensive eBook. Discover tips and strategies to ensure your team's status is always active and engaged.">
-
-  <!-- Keywords -->
-  <meta name="keywords" content="Microsoft Teams Stay Green, Teams Stay Green, Teams Stay Green eBook, How to Make Microsoft Teams Stay Green eBook">
-
-  <!-- Open Graph Meta Tags for Social Sharing -->
-  <meta property="og:title" content="How to Make Microsoft Teams Stay Green - eBook">
-  <meta property="og:description" content="Learn how to make Microsoft Teams stay green with our comprehensive eBook. Discover tips and strategies to ensure your team's status is always active and engaged.">
-  <meta property="og:image" content="<%= asset_url('teamsstaygreen.png') %>">
-  <meta property="og:url" content="<%= request.original_url %>">
-  <meta property="og:type" content="book">
-  <meta property="og:site_name" content="Teams Stay Green eGuide eBook">
-
-  <!-- Twitter Card Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="How to Make Microsoft Teams Stay Green - eBook">
-  <meta name="twitter:description" content="Learn how to make Microsoft Teams stay green with our comprehensive eBook. Discover tips and strategies to ensure your team's status is always active and engaged.">
-  <meta name="twitter:image" content="<%= asset_url('teamsstaygreen.png') %>">
-  <%# <meta name="twitter:site" content="@YourTwitterHandle">
-  <meta name="twitter:creator" content="@YourTwitterHandle"> %>
-
-  <!-- Favicon -->
-  <link rel="icon" href="<%= asset_url('favicon.ico') %>" type="image/x-icon">
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,300,800">
-
-  <!-- Stylesheets -->
-  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-  <!-- JavaScript -->
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script src="https://cdn.optimizely.com/js/6611953346.js"></script>
-  <script src="https://js.stripe.com/v3/"></script>
-
-  <!-- CSRF Meta Tags -->
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  <div id="content" class="container">
-    <header id="content-header">
-      <div id="price-container">
-        <span class="glyphicon glyphicon-tag"></span>
-        <span class="price"><%= sprintf("$%.2f", @product.price / 1.0) %></span>
-      </div>
-      <%= image_tag('teamsstaygreen.png', id: 'content-header-img', alt: 'Teams Stay Green') %>
-    </header>
-
-    <%= yield %>
-
-  </div>
-</body>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.optimizely.com/js/6611953346.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
+  
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div id="content" class="container">
+      <header id="content-header">
+        <div id="price-container">
+          <span class="glyphicon glyphicon-tag"></span><span class="price">$8.99</span>
+        </div>
+        <%= image_tag('teamsstaygreen.png', id: 'content-header-img', alt: 'Teams Stay Green') %>
+      </header>
+  
+      <%= yield %>
+  
+    </div>
+  </body>
 </html>

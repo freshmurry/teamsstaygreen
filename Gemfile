@@ -1,62 +1,50 @@
 source 'https://rubygems.org'
 
 # Require a specific ruby version
-ruby '2.7.4'
+ruby '2.7.6'
 
-# Rails version
-gem 'rails', '~> 5.0.3'
-
-# Gems for asset management
-gem 'sass-rails', '~> 5.0'
-gem 'bootstrap-sass', '~> 3.4'
-gem 'jquery-rails'
+gem 'rails', '5.0.2'
 gem 'yarn'
-
-
-# Gems for functionality
-gem 'stripe'
+gem 'bootstrap-sass'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'figaro'
-gem 'activeadmin'
-gem 'devise'
-gem 'paperclip'
-
-# Gems for JavaScript and CoffeeScript
+gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'coffee-script', '~> 2.4'
+gem 'jquery-rails'
+gem 'jbuilder', '~> 2.0'
+gem 'devise'
+gem 'bigdecimal'
+gem 'ffi', '< 1.17.0'
+gem 'puma', '~> 3.0'
+gem 'turbolinks', '~> 5'
 
-# Gems for JSON and other utilities
-gem 'json'
-gem 'bigdecimal', '~> 2.0'
-gem 'ffi', '~> 1.15'
-gem 'psych', '~> 3.1'
-gem 'nokogiri', '~> 1.13'
-gem 'activerecord', '~> 5.0.3'
-
-# Web and development tools
 group :development do
   gem 'letter_opener'
-  gem 'web-console', '>= 3.5'
-  gem 'listen', '~> 3.3'
+  gem 'web-console', '>= 3.3.0'
+  gem 'listen', '~> 3.0.5'
   gem 'spring'
-  gem 'spring-watcher-listen', '~> 2.0'
+  gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
 group :development, :test do
   gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', platform: :mri
-  gem 'yard'
-  gem 'dotenv-rails'
 end
 
 group :production do
-  gem 'pg', '~> 1.2'
+  gem 'pg', '>= 0.18', '< 2.0'
+  gem 'rails_12factor'
 end
 
 group :test do
-  gem 'webdrivers'
+  gem 'capybara', '>= 2.15'
+  gem 'selenium-webdriver'
+  gem 'chromedriver-helper'
 end
 
 group :sdoc do
-  gem 'sdoc', '~> 1.0'
+  gem 'sdoc', '~> 0.4.0'
 end

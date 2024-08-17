@@ -16,6 +16,9 @@ Rails.application.configure do
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
 
+  # Send emails using letter opener in dev mode to open emails in a browser
+  config.action_mailer.delivery_method = :letter_opener
+
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
 
@@ -34,4 +37,15 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+  # config.force_ssl = true
+
+  # config.ssl_options = {
+  #   hsts: { expires: 1.year, preload: true, subdomains: true },
+  #   secure_cookies: true
+  # }
+
+  # config.ssl_options = {
+  #   redirect: { exclude: -> request { request.path =~ /healthcheck/ } }
+  # }
 end

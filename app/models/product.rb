@@ -1,7 +1,4 @@
 class Product < ActiveRecord::Base
-  has_attached_file :author_image
-  validates_attachment_content_type :author_image, content_type: /\Aimage\/.*\z/
-  
   def full_description
     "#{self.title} #{self.subtitle}"
   end
