@@ -12,6 +12,7 @@ gem 'bootstrap-sass', '~> 3.4'
 gem 'jquery-rails'
 gem 'yarn'
 
+
 # Gems for functionality
 gem 'stripe'
 gem 'figaro'
@@ -25,11 +26,12 @@ gem 'coffee-rails', '~> 4.2'
 gem 'coffee-script', '~> 2.4'
 
 # Gems for JSON and other utilities
-gem 'json', '~> 2.5'
+gem 'json'
 gem 'bigdecimal', '~> 2.0'
 gem 'ffi', '~> 1.15'
 gem 'psych', '~> 3.1'
 gem 'nokogiri', '~> 1.13'
+gem 'activerecord', '~> 5.0.3'
 
 # Web and development tools
 group :development do
@@ -41,7 +43,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.4'
+  gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', platform: :mri
   gem 'yard'
   gem 'dotenv-rails'
