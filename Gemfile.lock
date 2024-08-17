@@ -325,7 +325,7 @@ DEPENDENCIES
   jquery-rails
   letter_opener
   listen (~> 3.0.5)
-  pg (~> 1.2)
+  pg (~> 1.5)
   puma (~> 3.0)
   rails (= 5.0.2)
   rails_12factor
