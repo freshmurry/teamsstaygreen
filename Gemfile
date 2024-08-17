@@ -3,12 +3,12 @@ source 'https://rubygems.org'
 # Require a specific ruby version
 ruby '2.7.4'
 
-gem 'rails', '~> 4.2'
+gem 'rails', '~> 5.2.8'
 gem 'yarn'
 gem 'bootstrap-sass'
 gem 'stripe'
 gem 'figaro'
-gem 'activeadmin', '~> 1.0.0.pre2'
+gem 'activeadmin'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
@@ -23,7 +23,7 @@ gem 'turbolinks', '~> 5'
 gem 'paperclip'
 gem 'json', '~> 2.3'
 gem 'psych', '~> 3.1'
-
+gem 'nokogiri'
 
 group :development do
   gem 'letter_opener'
@@ -46,7 +46,7 @@ group :production do
 end
 
 group :test do
-  gem 'chromedriver-helper'
+  gem 'webdrivers'
 end
 
 group :sdoc do
