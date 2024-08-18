@@ -3,26 +3,33 @@ source 'https://rubygems.org'
 # Require a specific ruby version
 ruby '2.7.6'
 
-gem 'rails', '5.0.2'
+git_source(:github) do |repo_name|
+  repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
+  "https://github.com/#{repo_name}.git"
+end
+
+gem 'rails', '5.0.3'
 gem 'yarn'
-gem 'bootstrap-sass'
+gem "bootstrap-sass", ">= 3.4.1"
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 gem 'figaro'
 gem 'activeadmin', '~> 1.0.0.pre2'
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier', '>= 4.0.2'
 gem 'coffee-rails', '~> 4.2'
 gem 'coffee-script', '~> 2.4'
 gem 'jquery-rails'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.5'
 gem 'devise'
 gem 'bigdecimal'
 gem 'ffi', '< 1.17.0'
 gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
+gem 'paperclip', '~> 5.1.0'
+gem 'aws-sdk-s3'
 
 group :development do
-  gem 'letter_opener'
+  gem 'sqlite3', '~> 1.3.13'
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '~> 3.0.5'
   gem 'spring'
@@ -30,12 +37,11 @@ group :development do
 end
 
 group :development, :test do
-  gem 'sqlite3', '~> 1.3.6'
   gem 'byebug', platform: :mri
 end
 
 group :production do
-  gem 'pg', '~> 1.5'
+  gem 'pg', '1.5.7'
   gem 'rails_12factor'
 end
 
