@@ -95,7 +95,7 @@ Rails.application.configure do
   
   config.action_mailer.delivery_method = :smtp
   
-  config.action_mailer.default_url_options = { host: 'https://teamsstaygreen.com' }
+  config.action_mailer.default_url_options = { host: 'teamsstaygreen.com' }
   
   ActionMailer::Base.smtp_settings = {
     :address        => 'smtp.sendgrid.net',
@@ -103,7 +103,7 @@ Rails.application.configure do
     :authentication => :plain,
     :user_name      => ENV['SENDGRID_USERNAME'],
     :password       => ENV['SENDGRID_PASSWORD'],
-    :domain         => 'https://teamsstaygreen.com',
+    :domain         => 'teamsstaygreen.com',
     :enable_starttls_auto => true
   }
 
