@@ -27,6 +27,7 @@ gem 'puma', '~> 3.0'
 gem 'turbolinks', '~> 5'
 gem 'paperclip', '~> 5.1.0'
 gem 'aws-sdk-s3'
+gem 'bundler', '~> 1.17'
 
 group :development do
   gem 'sqlite3', '~> 1.3.13'
