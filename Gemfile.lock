@@ -213,7 +213,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
     parslet (2.0.0)
-    pg (1.5.7)
+    pg (0.20.0)
     public_suffix (5.1.1)
     puma (3.12.6)
     racc (1.8.1)
@@ -353,7 +353,7 @@ DEPENDENCIES
   jquery-rails
   listen (~> 3.0.5)
   paperclip (~> 5.1.0)
-  pg (= 1.5.7)
+  pg (~> 0.20.0)
   puma (~> 3.0)
   rails (= 5.0.3)
   rails_12factor
