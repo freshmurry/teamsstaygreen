@@ -52,7 +52,3 @@ group :test do
   gem 'selenium-webdriver'
   gem 'chromedriver-helper'
 end
-
-group :sdoc do
-  gem 'sdoc', '~> 0.4.0'
-end
