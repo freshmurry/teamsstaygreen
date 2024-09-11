@@ -28,7 +28,8 @@ gem 'turbolinks', '~> 5'
 gem 'paperclip', '~> 5.1.0'
 gem 'aws-sdk-s3'
 gem 'bundler', '~> 1.17'
-gem 'json', '~> 1.8'
+# gem 'json', '~> 1.8'
+gem 'json', '~> 2.0'
 
 group :development do
   gem 'sqlite3', '~> 1.3.13'
