@@ -1,8 +1,6 @@
 ActiveAdmin.register Product do
-  # Permit the parameters you want to allow for mass assignment
   permit_params :title, :subtitle, :author, :description, :price, :details, :download_url, :length, :author_description, :author_image_name
 
-  # Define the form used for creating and editing products
   form do |f|
     f.inputs 'Product Details' do
       f.input :title
@@ -26,7 +24,6 @@ ActiveAdmin.register Product do
     f.actions
   end
 
-  # Define how the products will be listed in the index view
   index do
     selectable_column
     id_column
@@ -45,7 +42,6 @@ ActiveAdmin.register Product do
     actions
   end
 
-  # Define how the product details will be shown in the show view
   show do
     attributes_table do
       row :title
