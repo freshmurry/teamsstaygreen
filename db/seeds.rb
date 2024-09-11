@@ -27,7 +27,7 @@ eGuide = Product.create(
                 </ul>
                 <p>Be sure to follow me on <a href="https://www.instagram.com/l.a.murry/" target="_blank">@l.a.murry</a> and send me a message should you have any questions.</p>},
   author_description: %{<p>Hey Y\'all, I\'m Lawrence Murry!</p>
-    <p>I'm a Senior Technical Proposal Manager. Aside from my day job, I enjoy working on techy things, spending time with my two kids, and watching my beloved Chicago Bears, Bulls, and Cubs kick ass.</p>})
+    <p>I\'m a Senior Technical Proposal Manager. Aside from my day job, I enjoy working on techy things, spending time with my two kids, and watching my beloved Chicago Bears, Bulls, and Cubs kick ass.</p>})
 
 # growth_hacking = Product.create(
 # 	title: "Growth Hacking Your Instagram Following", 
