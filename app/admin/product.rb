@@ -1,17 +1,19 @@
 ActiveAdmin.register Product do
-  permit_params :title, :subtitle, :author, :description, :price, :details, :download_url, :length, :author_description, :author_image
+  # Permit the parameters you want to allow for mass assignment
+  permit_params :title, :subtitle, :author, :description, :price, :details, :download_url, :length, :author_description, :author_image_name
 
+  # Define the form used for creating and editing products
   form do |f|
     f.inputs 'Product Details' do
       f.input :title
       f.input :subtitle
       f.input :author
       f.input :description, as: :text
-      f.input :price, hint: 'Enter the price in cents'
+      f.input :price, hint: 'Enter the price as a decimal number, e.g., 8.99'
       f.input :details
       f.input :length, hint: 'Enter the length or leave blank for "Unknown"'
       f.input :author_description, as: :text
-      f.input :author_image, as: :file, hint: 'Upload an image for the author'
+      f.input :author_image_name, as: :file, hint: 'Upload an image for the author'
     end
     f.inputs 'Download URL' do
       f.input :download_url
@@ -24,6 +26,7 @@ ActiveAdmin.register Product do
     f.actions
   end
 
+  # Define how the products will be listed in the index view
   index do
     selectable_column
     id_column
@@ -31,7 +34,7 @@ ActiveAdmin.register Product do
     column :subtitle
     column :author
     column :price do |product|
-      sprintf("$%.2f", product.price * 1)
+      number_to_currency(product.price)
     end
     column :length do |product|
       product.length.present? ? product.length : 'Unknown'
@@ -42,6 +45,7 @@ ActiveAdmin.register Product do
     actions
   end
 
+  # Define how the product details will be shown in the show view
   show do
     attributes_table do
       row :title
@@ -51,7 +55,7 @@ ActiveAdmin.register Product do
         raw product.description
       end
       row :price do |product|
-        sprintf("$%.2f", product.price * 1)
+        number_to_currency(product.price)
       end
       row :details
       row :length do |product|
@@ -63,8 +67,12 @@ ActiveAdmin.register Product do
       row :author_description do |product|
         raw product.author_description
       end
-      row :author_image do |product|
-        image_tag product.author_image.url if product.author_image.present?
+      row :author_image_name do |product|
+        if product.author_image_name.present?
+          image_tag product.author_image_name.url, size: "200x200" # Adjust size as needed
+        else
+          "No image uploaded"
+        end
       end
     end
     active_admin_comments
