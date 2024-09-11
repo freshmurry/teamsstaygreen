@@ -1,5 +1,5 @@
 ActiveAdmin.register Product do
-  permit_params :title, :subtitle, :author, :description, :price, :details, :download_url, :length, :author_description, :author_image
+  permit_params :title, :subtitle, :author, :description, :price, :details, :download_url, :length, :author_description, :author_image_name
 
   form do |f|
     f.inputs 'Product Details' do
@@ -11,7 +11,7 @@ ActiveAdmin.register Product do
       f.input :details
       f.input :length, hint: 'Enter the length or leave blank for "Unknown"'
       f.input :author_description, as: :text
-      f.input :author_image, as: :file, hint: 'Upload an image for the author'
+      f.input :author_image_name, as: :file, hint: 'Upload an image for the author'
     end
     f.inputs 'Download URL' do
       f.input :download_url

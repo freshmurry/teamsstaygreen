@@ -4,7 +4,7 @@ eGuide = Product.create(
   author: "Lawrence Murry",
   author_image_name: "freshmurry.jpg",
   length: "(1) eGuide",
-  price: 8.99, # Changed to a numeric value
+  price: 18.99, # Changed to a numeric value
   sku: "eGuide",
   download_url: "https://teams-stay-green.s3.us-east-2.amazonaws.com/How-to-Make-Microsoft-Teams-Stay-Green.pdf",
   details: 'You\'ll receive one downloadable eGuide', # Correctly escaped
