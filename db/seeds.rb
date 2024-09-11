@@ -18,7 +18,7 @@ eGuide = Product.create(
   details: "You\'ll receive one downloadable eGuide",
   description: %{<p>If you are working at a company that uses Microsoft Teams and want to learn how to make Teams Stay Green, this eGuide is just for you!
                 <p>My goal is to take away the pain of searching for ways to keep your Microsoft Teams stay green while you run out for a quick coffee.</p>
-                <p><strong>What You'll Learn:</strong></p>
+                <p><strong>What You\'ll Learn:</strong></p>
                 <ul class="no-indent">
                   <li>Make Microsoft Teams Stay Green Guide</li>
                   <li>Screenshots</li>
@@ -76,3 +76,5 @@ eGuide = Product.create(
 #     <p>Why purchase my eBook? At the age of 26, I closed on my first house. While this might not be a surprised to the majority, homeownership while in your mid-20's as a minority is eceptionally rare.</p> 
 #     <p>My goal is to help you and others young adults prepare to to excel in the adulting game.</p>
 #     <p>Follow me on Instagram <a href="https://instagram.com/freshmurry" target="_blank">@freshmurry</a></p>})
+
+AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
