@@ -1,5 +1,5 @@
 ActiveAdmin.register Product do
-  permit_params :title, :subtitle, :author, :description, :price, :details, :download_url, :length, :author_description, :author_image_name
+  permit_params :title, :subtitle, :author, :description, :price, :details, :download_url, :length, :author_description, :author_image
 
   form do |f|
     f.inputs 'Product Details' do
@@ -7,11 +7,11 @@ ActiveAdmin.register Product do
       f.input :subtitle
       f.input :author
       f.input :description, as: :text
-      f.input :price, hint: 'Enter the price as a decimal number, e.g., 8.99'
+      f.input :price, hint: 'Enter the price in cents'
       f.input :details
       f.input :length, hint: 'Enter the length or leave blank for "Unknown"'
       f.input :author_description, as: :text
-      f.input :author_image_name, as: :file, hint: 'Upload an image for the author'
+      f.input :author_image, as: :file, hint: 'Upload an image for the author'
     end
     f.inputs 'Download URL' do
       f.input :download_url
@@ -31,7 +31,7 @@ ActiveAdmin.register Product do
     column :subtitle
     column :author
     column :price do |product|
-      number_to_currency(product.price)
+      sprintf("$%.2f", product.price * 1)
     end
     column :length do |product|
       product.length.present? ? product.length : 'Unknown'
@@ -51,7 +51,7 @@ ActiveAdmin.register Product do
         raw product.description
       end
       row :price do |product|
-        number_to_currency(product.price)
+        sprintf("$%.2f", product.price * 1)
       end
       row :details
       row :length do |product|
