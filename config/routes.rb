@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :products, only: [:index, :show]
   
   # Support stripe payments through charges
-  resources :charges
+  resources :charges, only: [:new, :create]
 
   # Route for showing purchases
   resources :purchases, only: [:show]
