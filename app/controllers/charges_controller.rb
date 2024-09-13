@@ -3,14 +3,10 @@ class ChargesController < ApplicationController
   def create
     product = Product.find_by_sku("eGuide")
     
-    if product.nil?
-      flash[:error] = "Product not found."
-      redirect_to new_charge_path and return
-    end
-
     customer = Stripe::Customer.create(
       email: params[:stripeEmail],
-      source: params[:stripeToken] # Updated to `source` instead of `card`
+      card: params[:stripeToken],
+      plan: "eGuide"
     )
 
     # charge = Stripe::Charge.create(
@@ -32,15 +28,10 @@ class ChargesController < ApplicationController
       uuid: SecureRandom.uuid
     )
 
-    if purchase.persisted?
-      redirect_to purchase_path(purchase)
-    else
-      flash[:error] = "Failed to create purchase."
-      redirect_to new_charge_path
-    end
+    redirect_to purchase
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to new_charge_path
+    redirect_to charges_path
   end
 end
