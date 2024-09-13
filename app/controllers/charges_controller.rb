@@ -1,10 +1,14 @@
 class ChargesController < ApplicationController
+  def new
+    # Render the form for new charges
+  end
+
   def create
     product = Product.find_by_sku("eGuide")
     
     if product.nil?
       flash[:error] = "Product not found."
-      redirect_to charges_path and return
+      redirect_to new_charge_path and return
     end
 
     customer = Stripe::Customer.create(
@@ -12,12 +16,12 @@ class ChargesController < ApplicationController
       source: params[:stripeToken] # Updated to `source` instead of `card`
     )
 
-    charge = Stripe::Charge.create(
-      customer: customer.id,
-      amount: (product.price * 100).to_i, # Ensure amount is in cents
-      description: product.full_description,
-      currency: 'usd'
-    )
+    # charge = Stripe::Charge.create(
+    #   customer: customer.id,
+    #   amount: (product.price * 100).to_i, # Ensure amount is in cents
+    #   description: product.full_description,
+    #   currency: 'usd'
+    # )
 
     purchase = Purchase.create(
       email: params[:stripeEmail],
@@ -34,11 +38,16 @@ class ChargesController < ApplicationController
       redirect_to purchase_path(purchase)
     else
       flash[:error] = "Failed to create purchase."
-      redirect_to charges_path
+      redirect_to new_charge_path
     end
 
   rescue Stripe::CardError => e
     flash[:error] = e.message
-    redirect_to charges_path
+    redirect_to new_charge_path
+  end
+
+  def show
+    @purchase = Purchase.find_by(uuid: params[:id])
+    # Implement logic to show details of a specific charge
   end
 end
